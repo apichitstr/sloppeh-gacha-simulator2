@@ -1,18 +1,25 @@
 :root {
   color-scheme: dark;
-  --bg-0: #010409;
-  --bg-1: #050b16;
-  --bg-2: #0a1428;
-  --panel: rgba(7, 12, 24, 0.88);
-  --panel-strong: rgba(9, 18, 36, 0.96);
-  --border: rgba(96, 165, 250, 0.2);
+  --bg-0: #04030a;
+  --bg-1: #0b0b1b;
+  --bg-2: #11162d;
+  --panel: rgba(14, 13, 31, 0.88);
+  --panel-strong: rgba(17, 21, 42, 0.96);
+  --border: rgba(173, 162, 255, 0.22);
   --text: #f8fafc;
-  --muted: #9ab0cf;
-  --blue: #44adff;
-  --blue-strong: #1f80ea;
-  --orange: #68beff;
-  --purple: #8ecbff;
-  --green: #b7ddff;
+  --muted: #b2b8d4;
+  --blue: #5cd4ff;
+  --blue-strong: #6f8fff;
+  --orange: #ff84d6;
+  --purple: #c289ff;
+  --green: #6ef3d6;
+  --rainbow-a: #ff5ca8;
+  --rainbow-b: #ff9d5c;
+  --rainbow-c: #ffe76a;
+  --rainbow-d: #65f0b7;
+  --rainbow-e: #63d3ff;
+  --rainbow-f: #9e7bff;
+  --rainbow-gradient: linear-gradient(120deg, var(--rainbow-a) 0%, var(--rainbow-b) 18%, var(--rainbow-c) 36%, var(--rainbow-d) 54%, var(--rainbow-e) 72%, var(--rainbow-f) 100%);
   --shadow: 0 18px 48px rgba(2, 6, 23, 0.42);
   --radius: 22px;
   font-family: "Segoe UI", "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -31,9 +38,9 @@ body {
   margin: 0;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(68, 173, 255, 0.12), transparent 26%),
-    radial-gradient(circle at top right, rgba(31, 128, 234, 0.1), transparent 22%),
-    radial-gradient(circle at bottom center, rgba(96, 165, 250, 0.07), transparent 30%),
+    radial-gradient(circle at 8% 8%, rgba(255, 92, 168, 0.16), transparent 24%),
+    radial-gradient(circle at 92% 12%, rgba(99, 211, 255, 0.16), transparent 22%),
+    radial-gradient(circle at 50% 100%, rgba(158, 123, 255, 0.16), transparent 30%),
     linear-gradient(180deg, var(--bg-0) 0%, var(--bg-1) 46%, var(--bg-2) 100%);
   overflow-x: hidden;
 }
@@ -52,7 +59,7 @@ body {
   height: 280px;
   left: -90px;
   top: 70px;
-  background: rgba(68, 173, 255, 0.2);
+  background: rgba(255, 92, 168, 0.22);
 }
 
 .orb-two {
@@ -60,7 +67,7 @@ body {
   height: 240px;
   right: 30px;
   top: 120px;
-  background: rgba(31, 128, 234, 0.18);
+  background: rgba(99, 211, 255, 0.2);
 }
 
 .orb-three {
@@ -68,7 +75,7 @@ body {
   height: 260px;
   left: 30%;
   bottom: -80px;
-  background: rgba(96, 165, 250, 0.14);
+  background: rgba(158, 123, 255, 0.2);
 }
 
 .app-shell {
@@ -104,7 +111,7 @@ body {
   font-size: 0.78rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #8ebcff;
+  color: #9ec6ff;
 }
 
 h1 {
@@ -112,6 +119,10 @@ h1 {
   font-size: clamp(1.45rem, 2.8vw, 2.45rem);
   line-height: 1.08;
   letter-spacing: -0.02em;
+  background: var(--rainbow-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .subheading {
@@ -140,10 +151,10 @@ h1 {
   min-width: 146px;
   padding: 0.75rem 0.95rem;
   border-radius: 18px;
-  background: linear-gradient(180deg, #3fa8ff 0%, #1f80ea 100%);
-  border: 1px solid rgba(191, 219, 254, 0.36);
-  color: #eaf4ff;
-  box-shadow: 0 12px 28px rgba(31, 128, 234, 0.32);
+  background: var(--rainbow-gradient);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #081327;
+  box-shadow: 0 12px 28px rgba(124, 109, 255, 0.35);
   text-align: left;
 }
 
@@ -153,7 +164,7 @@ h1 {
   font-weight: 800;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  opacity: 0.82;
+  opacity: 0.9;
 }
 
 .pearl-badge strong {
@@ -275,11 +286,11 @@ h1 {
 }
 
 .pity-epic {
-  color: var(--purple);
+  color: #caa0ff;
 }
 
 .pity-legendary {
-  color: var(--orange);
+  color: #ff93d9;
 }
 
 .bliss-block {
@@ -305,8 +316,8 @@ h1 {
   width: 0%;
   height: 100%;
   border-radius: inherit;
-  background: linear-gradient(90deg, #3fa8ff 0%, #2c95f9 45%, #69beff 100%);
-  box-shadow: 0 0 18px rgba(68, 173, 255, 0.28);
+  background: var(--rainbow-gradient);
+  box-shadow: 0 0 18px rgba(158, 123, 255, 0.35);
   transition: width 0.22s ease;
 }
 
@@ -333,12 +344,12 @@ h1 {
   margin-top: 0.22rem;
   padding: 0.2rem 0.5rem;
   border-radius: 10px;
-  border: 1px solid rgba(96, 165, 250, 0.42);
-  background: rgba(37, 99, 235, 0.2);
-  color: #bfdbfe;
+  border: 1px solid rgba(194, 137, 255, 0.45);
+  background: rgba(124, 79, 214, 0.2);
+  color: #e9d9ff;
   font-weight: 800;
   letter-spacing: 0.01em;
-  text-shadow: 0 0 10px rgba(96, 165, 250, 0.24);
+  text-shadow: 0 0 10px rgba(194, 137, 255, 0.25);
 }
 
 .last-result-row {
@@ -410,18 +421,20 @@ h1 {
 }
 
 .button-primary {
-  background: linear-gradient(180deg, #44adff 0%, #1f80ea 100%);
-  box-shadow: 0 10px 24px rgba(31, 128, 234, 0.3);
+  background: var(--rainbow-gradient);
+  box-shadow: 0 10px 24px rgba(142, 109, 255, 0.34);
+  color: #0b1025;
 }
 
 .button-warning {
-  background: linear-gradient(180deg, #78c6ff 0%, #2f8ef2 100%);
-  box-shadow: 0 10px 24px rgba(47, 142, 242, 0.28);
+  background: linear-gradient(180deg, #81e9ff 0%, #7b8dff 100%);
+  box-shadow: 0 10px 24px rgba(107, 129, 255, 0.3);
+  color: #0b1025;
 }
 
 .button-neutral {
-  background: linear-gradient(180deg, #5b6b85 0%, #475569 100%);
-  box-shadow: 0 10px 24px rgba(71, 85, 105, 0.2);
+  background: linear-gradient(180deg, #3d4468 0%, #2d3557 100%);
+  box-shadow: 0 10px 24px rgba(32, 43, 78, 0.35);
 }
 
 .currency-row {
@@ -509,7 +522,10 @@ h1 {
   padding: 0.95rem 1rem 0;
   font-size: 0.9rem;
   font-weight: 800;
-  color: #dbeafe;
+  background: var(--rainbow-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .log-list,
@@ -539,7 +555,7 @@ h1 {
 }
 
 .log-line.header {
-  color: #5bb6ff;
+  color: #81d9ff;
   font-weight: 800;
 }
 
@@ -575,27 +591,27 @@ h1 {
 }
 
 .inventory-group.rarity-legendary h3 {
-  color: var(--orange);
+  color: #ff93d9;
 }
 
 .inventory-group.rarity-epic h3 {
-  color: var(--purple);
+  color: #caa0ff;
 }
 
 .inventory-group.rarity-rare h3 {
-  color: var(--green);
+  color: #79efd8;
 }
 
 .inventory-item.legendary {
-  color: var(--orange);
+  color: #ff93d9;
 }
 
 .inventory-item.epic {
-  color: var(--purple);
+  color: #caa0ff;
 }
 
 .inventory-item.rare {
-  color: var(--green);
+  color: #79efd8;
 }
 
 .inventory-item,
