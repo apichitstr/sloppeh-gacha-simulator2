@@ -10,7 +10,7 @@ Open `index.html` in a browser.
 
 Create the repository under your GitHub account with the name:
 
-`GachaSimulatorWeb2`
+`sloppeh-gacha-simulator2`
 
 Then:
 
@@ -21,7 +21,7 @@ Then:
 
 The live link will be:
 
-`https://<your-github-username>.github.io/GachaSimulatorWeb2/`
+`https://<your-github-username>.github.io/sloppeh-gacha-simulator2/`
 
 If you use a different repository name, the URL becomes:
 

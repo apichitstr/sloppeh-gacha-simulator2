@@ -6,11 +6,11 @@ This project is ready for a static GitHub Pages deployment.
 
 Create this repository under your GitHub account:
 
-`GachaSimulatorWeb2`
+`sloppeh-gacha-simulator2`
 
 Then the published site will be:
 
-`https://<your-github-username>.github.io/GachaSimulatorWeb2/`
+`https://<your-github-username>.github.io/sloppeh-gacha-simulator2/`
 
 ## What is already prepared
 
@@ -23,7 +23,7 @@ Then the published site will be:
 ## One-time publish steps
 
 1. Sign in to GitHub with the account that will host the site.
-2. Create a new repository named `GachaSimulatorWeb2`.
+2. Create a new repository named `sloppeh-gacha-simulator2`.
 3. Push this project to that repository.
 4. In the repository settings, open **Pages**.
 5. Set the source to **GitHub Actions**.
@@ -34,7 +34,7 @@ Then the published site will be:
 Run these from `d:\GachaSimulatorWeb2` after creating the GitHub repository:
 
 ```powershell
-git remote add origin https://github.com/<your-github-username>/GachaSimulatorWeb2.git
+git remote add origin https://github.com/<your-github-username>/sloppeh-gacha-simulator2.git
 git add .
 git commit -m "Initial web version"
 git push -u origin main
