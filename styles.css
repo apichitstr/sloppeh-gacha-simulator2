@@ -1,18 +1,18 @@
 :root {
   color-scheme: dark;
-  --bg-0: #030712;
-  --bg-1: #0a0f1d;
-  --bg-2: #111827;
-  --panel: rgba(10, 15, 29, 0.86);
-  --panel-strong: rgba(15, 23, 42, 0.96);
-  --border: rgba(148, 163, 184, 0.14);
+  --bg-0: #010409;
+  --bg-1: #050b16;
+  --bg-2: #0a1428;
+  --panel: rgba(7, 12, 24, 0.88);
+  --panel-strong: rgba(9, 18, 36, 0.96);
+  --border: rgba(96, 165, 250, 0.2);
   --text: #f8fafc;
-  --muted: #94a3b8;
-  --blue: #33a1fd;
-  --blue-strong: #1d9bf0;
-  --orange: #ff8a00;
-  --purple: #b36bff;
-  --green: #8de05f;
+  --muted: #9ab0cf;
+  --blue: #44adff;
+  --blue-strong: #1f80ea;
+  --orange: #68beff;
+  --purple: #8ecbff;
+  --green: #b7ddff;
   --shadow: 0 18px 48px rgba(2, 6, 23, 0.42);
   --radius: 22px;
   font-family: "Segoe UI", "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -31,9 +31,9 @@ body {
   margin: 0;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(51, 161, 253, 0.1), transparent 26%),
-    radial-gradient(circle at top right, rgba(179, 107, 255, 0.08), transparent 22%),
-    radial-gradient(circle at bottom center, rgba(141, 224, 95, 0.05), transparent 30%),
+    radial-gradient(circle at top left, rgba(68, 173, 255, 0.12), transparent 26%),
+    radial-gradient(circle at top right, rgba(31, 128, 234, 0.1), transparent 22%),
+    radial-gradient(circle at bottom center, rgba(96, 165, 250, 0.07), transparent 30%),
     linear-gradient(180deg, var(--bg-0) 0%, var(--bg-1) 46%, var(--bg-2) 100%);
   overflow-x: hidden;
 }
@@ -52,7 +52,7 @@ body {
   height: 280px;
   left: -90px;
   top: 70px;
-  background: rgba(51, 161, 253, 0.18);
+  background: rgba(68, 173, 255, 0.2);
 }
 
 .orb-two {
@@ -60,7 +60,7 @@ body {
   height: 240px;
   right: 30px;
   top: 120px;
-  background: rgba(179, 107, 255, 0.16);
+  background: rgba(31, 128, 234, 0.18);
 }
 
 .orb-three {
@@ -68,7 +68,7 @@ body {
   height: 260px;
   left: 30%;
   bottom: -80px;
-  background: rgba(141, 224, 95, 0.1);
+  background: rgba(96, 165, 250, 0.14);
 }
 
 .app-shell {
@@ -140,10 +140,10 @@ h1 {
   min-width: 146px;
   padding: 0.75rem 0.95rem;
   border-radius: 18px;
-  background: linear-gradient(180deg, #b8f47b 0%, #8ee05d 100%);
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  color: #13210d;
-  box-shadow: 0 12px 28px rgba(141, 224, 95, 0.24);
+  background: linear-gradient(180deg, #3fa8ff 0%, #1f80ea 100%);
+  border: 1px solid rgba(191, 219, 254, 0.36);
+  color: #eaf4ff;
+  box-shadow: 0 12px 28px rgba(31, 128, 234, 0.32);
   text-align: left;
 }
 
@@ -190,7 +190,7 @@ h1 {
 .rich-toggle input {
   width: 16px;
   height: 16px;
-  accent-color: var(--green);
+  accent-color: var(--blue);
 }
 
 .stats-panel {
@@ -305,8 +305,8 @@ h1 {
   width: 0%;
   height: 100%;
   border-radius: inherit;
-  background: linear-gradient(90deg, #ff8a00 0%, #f59e0b 45%, #facc15 100%);
-  box-shadow: 0 0 18px rgba(250, 204, 21, 0.24);
+  background: linear-gradient(90deg, #3fa8ff 0%, #2c95f9 45%, #69beff 100%);
+  box-shadow: 0 0 18px rgba(68, 173, 255, 0.28);
   transition: width 0.22s ease;
 }
 
@@ -333,12 +333,12 @@ h1 {
   margin-top: 0.22rem;
   padding: 0.2rem 0.5rem;
   border-radius: 10px;
-  border: 1px solid rgba(141, 224, 95, 0.32);
-  background: rgba(141, 224, 95, 0.12);
-  color: #b8f47b;
+  border: 1px solid rgba(96, 165, 250, 0.42);
+  background: rgba(37, 99, 235, 0.2);
+  color: #bfdbfe;
   font-weight: 800;
   letter-spacing: 0.01em;
-  text-shadow: 0 0 10px rgba(141, 224, 95, 0.18);
+  text-shadow: 0 0 10px rgba(96, 165, 250, 0.24);
 }
 
 .last-result-row {
@@ -410,13 +410,13 @@ h1 {
 }
 
 .button-primary {
-  background: linear-gradient(180deg, #33a1fd 0%, #1d9bf0 100%);
-  box-shadow: 0 10px 24px rgba(29, 155, 240, 0.24);
+  background: linear-gradient(180deg, #44adff 0%, #1f80ea 100%);
+  box-shadow: 0 10px 24px rgba(31, 128, 234, 0.3);
 }
 
 .button-warning {
-  background: linear-gradient(180deg, #ffb14d 0%, #f39c12 100%);
-  box-shadow: 0 10px 24px rgba(243, 156, 18, 0.22);
+  background: linear-gradient(180deg, #78c6ff 0%, #2f8ef2 100%);
+  box-shadow: 0 10px 24px rgba(47, 142, 242, 0.28);
 }
 
 .button-neutral {
